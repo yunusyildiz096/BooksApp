@@ -18,5 +18,5 @@
 ### - Glide
 
 ## API
-http://books.canerture.com/ (Can Türe)
+http://books.canerture.com/ (Caner Türe)
 
