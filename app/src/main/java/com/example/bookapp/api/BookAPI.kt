@@ -1,7 +1,6 @@
 package com.example.booksapp.api
 
 import com.example.bookapp.model.Books
-import com.example.booksapp.model.Book
 import retrofit2.Response
 import retrofit2.http.GET
 
