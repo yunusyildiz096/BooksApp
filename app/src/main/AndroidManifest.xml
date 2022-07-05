@@ -14,7 +14,10 @@
         android:theme="@style/Theme.BookApp"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".fragments.LoginActivity"
+            android:name=".view.SingUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.LoginActivity"
             android:exported="false"
             android:label="@string/title_activity_login"
             android:theme="@style/Theme.BookApp.NoActionBar" />
@@ -28,6 +31,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.example.booksapp.fragments.SingIn"
+            android:windowSoftInputMode="adjustPan"  />
+        <activity
+            android:name=".view.SingUp"
+            android:windowSoftInputMode="adjustPan" />
     </application>
 
 </manifest>

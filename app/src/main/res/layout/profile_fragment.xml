@@ -42,4 +42,6 @@
         android:text="Çıkış yap"
         android:textAllCaps="false"
         app:cornerRadius="10dp" />
+
+
 </LinearLayout>

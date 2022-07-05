@@ -9,6 +9,5 @@ class SingUpViewModel : ViewModel() {
 
     fun singUp(email : String,password : String,userName : String){
         repository.singUp(email,password,userName)
-
     }
 }

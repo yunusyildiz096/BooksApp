@@ -18,17 +18,6 @@ class MainActivity : AppCompatActivity() {
 
         val navController = findNavController(R.id.fragmentContainerView)
         setupBottomNavMenu(navController)
-
-        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
-
-        navController.addOnDestinationChangedListener(NavController.OnDestinationChangedListener { controller, destination, arguments ->
-            if(destination.id == R.id.singIn || destination.id == R.id.singUp ){
-                bottomNavigationView.visibility = View.GONE
-            }else{
-                bottomNavigationView.visibility = View.VISIBLE
-            }
-        })
-
     }
     private fun setupBottomNavMenu(navController: NavController){
 
