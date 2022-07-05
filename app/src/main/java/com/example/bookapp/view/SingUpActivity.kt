@@ -42,7 +42,7 @@ class SingUpActivity : AppCompatActivity() {
                     viewModel.singUp(email, password, userName)
                     val intent = Intent(this@SingUpActivity, MainActivity::class.java)
                     startActivity(intent)
-                    finish()
+
                 }
             }
             goToSingIn.setOnClickListener {
