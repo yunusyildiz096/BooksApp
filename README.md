@@ -15,7 +15,6 @@
 ### - Retrofit
 ### - Room
 ### - Navigation
-### - View Binding
 ### - Glide
 
 ## API
