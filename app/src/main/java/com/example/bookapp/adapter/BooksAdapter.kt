@@ -16,7 +16,7 @@ open class BooksAdapter(private val listener : Listener) : RecyclerView.Adapter<
             binding.bookName.text = result.bookName
             binding.bookPrice.text = "${result.bookPrice} TL"
             Glide.with(binding.root).load(result.bookİmageUrl).into(binding.bookImage)
-            binding.bookMore.setOnClickListener {
+            binding.bookImage.setOnClickListener {
                 listener.onItemClick(result)
             }
 

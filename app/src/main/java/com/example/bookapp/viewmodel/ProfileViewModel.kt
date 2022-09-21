@@ -22,8 +22,8 @@ class ProfileViewModel : ViewModel() {
         _userInfo = repository.userInfo
     }
 
-    fun singOut(){
-        repository.singOut()
+    fun signOut(){
+        repository.signOut()
     }
 
 }

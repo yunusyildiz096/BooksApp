@@ -14,7 +14,7 @@ class LoginRepository {
     private var db = Firebase.firestore
     var userInfo = MutableLiveData<Users>()
 
-    fun singUp(email : String,password : String,userName: String){
+    fun signUp(email : String,password : String,userName: String){
 
         auth.createUserWithEmailAndPassword(email, password).addOnSuccessListener {
 
@@ -24,12 +24,11 @@ class LoginRepository {
                 user.put("email", auth.currentUser!!.email!!)
                 user.put("username", userName)
 
-                db.collection("user").document(fbUser!!.uid) .set(user).addOnSuccessListener {
+               db.collection("user").document(fbUser!!.uid).set(user).addOnSuccessListener {
+                    
+               }
 
 
-                }.addOnFailureListener {
-
-                }
 
             }
 
@@ -37,7 +36,7 @@ class LoginRepository {
         }
 
     }
-    fun singIn(email: String,password: String){
+    fun signIn(email: String,password: String){
 
         auth.signInWithEmailAndPassword(email,password).addOnCompleteListener { task ->
             if (task.isSuccessful){
@@ -51,16 +50,14 @@ class LoginRepository {
             val docRef = db.collection("user").document(user.uid)
             docRef.get().addOnSuccessListener { document ->
                 document.let {
-                    userInfo.value = Users(document.get("username") as String,user.email)
+                    userInfo.value = Users(document.get("username") as String ,user.email)
                 }
-
-            }.addOnFailureListener {
 
             }
         }
     }
 
-    fun singOut(){
+    fun signOut(){
         auth.signOut()
     }
 

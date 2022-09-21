@@ -7,7 +7,7 @@ class SingUpViewModel : ViewModel() {
 
     private var repository = LoginRepository()
 
-    fun singUp(email : String,password : String,userName : String){
-        repository.singUp(email,password,userName)
+    fun signUp(email : String,password : String,userName : String){
+        repository.signUp(email,password,userName)
     }
 }

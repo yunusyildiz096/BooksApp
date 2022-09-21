@@ -53,6 +53,8 @@
             android:layout_height="wrap_content"
             app:passwordToggleEnabled="true"
             android:hint="Password"
+            app:hintTextColor="@color/blue"
+            app:boxStrokeColor="@color/blue"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             >
             <com.google.android.material.textfield.TextInputEditText
@@ -82,7 +84,7 @@
             android:layout_marginTop="20dp"
             />
         <Button
-            android:id="@+id/goToSingIn"
+            android:id="@+id/goToSignIn"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

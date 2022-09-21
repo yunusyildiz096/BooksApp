@@ -15,7 +15,7 @@
 
     <TextView
         android:id="@+id/proNameText"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="18sp"
         android:textColor="@color/blue"
@@ -24,7 +24,7 @@
 
     <TextView
         android:id="@+id/proMailText"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="30sp"

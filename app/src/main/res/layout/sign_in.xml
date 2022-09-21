@@ -36,6 +36,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
+            app:hintTextColor="@color/blue"
+            app:boxStrokeColor="@color/blue"
             app:passwordToggleEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -64,7 +66,7 @@
             android:textSize="15sp" />
 
         <Button
-            android:id="@+id/goToSingUp"
+            android:id="@+id/goToSignUp"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

@@ -8,7 +8,7 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import com.example.bookapp.R
 import com.example.bookapp.databinding.ProfileFragmentBinding
-import com.example.bookapp.view.SingUpActivity
+import com.example.bookapp.view.SignUpActivity
 import com.example.bookapp.viewmodel.ProfileViewModel
 
 class ProfileFragment: Fragment(R.layout.profile_fragment) {
@@ -25,15 +25,16 @@ class ProfileFragment: Fragment(R.layout.profile_fragment) {
 
         binding.apply {
              singOutBtn.setOnClickListener {
-                viewModel.singOut()
+                viewModel.signOut()
 
-                 val intent = Intent(activity,SingUpActivity::class.java)
+                 val intent = Intent(activity,SignUpActivity::class.java)
                  activity!!.startActivity(intent)
                  activity!!.finish()
             }
             viewModel.userInfo.observe(viewLifecycleOwner, Observer {
-                proMailText.text = it.email
-                proNameText.text = it.userName
+               proMailText.text = it.email
+               proNameText.text = it.userName
+
             })
         }
 

@@ -5,16 +5,16 @@ import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.example.bookapp.MainActivity
-import com.example.bookapp.databinding.SingInBinding
-import com.example.bookapp.view.SingUpActivity
+import com.example.bookapp.databinding.SignInBinding
+import com.example.bookapp.view.SignUpActivity
 import com.example.booksapp.viewmodel.SingUpViewModel
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 
-class SingIn: AppCompatActivity() {
+class SignIn: AppCompatActivity() {
 
-    private lateinit var binding : SingInBinding
+    private lateinit var binding : SignInBinding
     val viewModel : SingUpViewModel by viewModels()
     private lateinit var auth : FirebaseAuth
 
@@ -22,14 +22,14 @@ class SingIn: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = SingInBinding.inflate(layoutInflater)
+        binding = SignInBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
 
         auth = Firebase.auth
         val current = auth.currentUser
         if(current != null){
-            val intent = Intent(this@SingIn,MainActivity::class.java)
+            val intent = Intent(this@SignIn,MainActivity::class.java)
             startActivity(intent)
             finish()
         }
@@ -39,14 +39,14 @@ class SingIn: AppCompatActivity() {
                 val email = editTextMail.editText!!.text.toString()
                 val password = editTextPassword.editText!!.text.toString()
                 if (email.isNotEmpty() || password.isNotEmpty()){
-                    viewModel.singUp(email, password,null.toString())
-                    val intent = Intent(this@SingIn,MainActivity::class.java)
+                    viewModel.signUp(email, password,null.toString())
+                    val intent = Intent(this@SignIn,MainActivity::class.java)
                     startActivity(intent)
                     finish()
                 }
             }
-            goToSingUp.setOnClickListener {
-                val intent = Intent(this@SingIn,SingUpActivity::class.java)
+            goToSignUp.setOnClickListener {
+                val intent = Intent(this@SignIn,SignUpActivity::class.java)
                 startActivity(intent)
                 finish()
             }

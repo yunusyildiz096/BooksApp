@@ -7,17 +7,19 @@
         <entry key="..\:/Users/yildi/AndroidStudioProjects/BookApp/app/src/main/res/drawable/bottom_background.xml" value="0.19054054054054054" />
         <entry key="..\:/Users/yildi/AndroidStudioProjects/BookApp/app/src/main/res/drawable/bottom_sheet_border.xml" value="0.19054054054054054" />
         <entry key="..\:/Users/yildi/AndroidStudioProjects/BookApp/app/src/main/res/layout/activity_main.xml" value="0.16" />
+        <entry key="..\:/Users/yildi/AndroidStudioProjects/BookApp/app/src/main/res/layout/activity_sing_up.xml" value="0.17657657657657658" />
         <entry key="..\:/Users/yildi/AndroidStudioProjects/BookApp/app/src/main/res/layout/activity_test.xml" value="0.16" />
         <entry key="..\:/Users/yildi/AndroidStudioProjects/BookApp/app/src/main/res/layout/basket_fragment.xml" value="0.17657657657657658" />
         <entry key="..\:/Users/yildi/AndroidStudioProjects/BookApp/app/src/main/res/layout/best_sellers_item.xml" value="0.16" />
         <entry key="..\:/Users/yildi/AndroidStudioProjects/BookApp/app/src/main/res/layout/book_details.xml" value="0.17657657657657658" />
-        <entry key="..\:/Users/yildi/AndroidStudioProjects/BookApp/app/src/main/res/layout/book_item.xml" value="0.22" />
+        <entry key="..\:/Users/yildi/AndroidStudioProjects/BookApp/app/src/main/res/layout/book_item.xml" value="0.25" />
         <entry key="..\:/Users/yildi/AndroidStudioProjects/BookApp/app/src/main/res/layout/books_fragment.xml" value="0.2" />
-        <entry key="..\:/Users/yildi/AndroidStudioProjects/BookApp/app/src/main/res/layout/bottom_sheet_dialog.xml" value="0.2" />
+        <entry key="..\:/Users/yildi/AndroidStudioProjects/BookApp/app/src/main/res/layout/bottom_sheet_dialog.xml" value="0.18" />
         <entry key="..\:/Users/yildi/AndroidStudioProjects/BookApp/app/src/main/res/layout/favorite_book.xml" value="0.17657657657657658" />
         <entry key="..\:/Users/yildi/AndroidStudioProjects/BookApp/app/src/main/res/layout/favorite_item.xml" value="0.18" />
         <entry key="..\:/Users/yildi/AndroidStudioProjects/BookApp/app/src/main/res/layout/fragment_login.xml" value="0.16441441441441443" />
         <entry key="..\:/Users/yildi/AndroidStudioProjects/BookApp/app/src/main/res/layout/profile_fragment.xml" value="0.2" />
+        <entry key="..\:/Users/yildi/AndroidStudioProjects/BookApp/app/src/main/res/layout/sign_in.xml" value="0.11684782608695653" />
         <entry key="..\:/Users/yildi/AndroidStudioProjects/BookApp/app/src/main/res/layout/sing_in.xml" value="0.17657657657657658" />
         <entry key="..\:/Users/yildi/AndroidStudioProjects/BookApp/app/src/main/res/layout/sing_in_fragment.xml" value="0.17657657657657658" />
         <entry key="..\:/Users/yildi/AndroidStudioProjects/BookApp/app/src/main/res/layout/sing_up.xml" value="0.22" />
